@@ -17,6 +17,7 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
+
     @Bean
     public Producer getProducer() {
         DefaultKaptcha defaultKaptcha = new DefaultKaptcha();
@@ -24,6 +25,7 @@ public class App {
         return defaultKaptcha;
     }
 
+    //验证码
     @Bean
     public Config getConfig() {
         Properties properties = new Properties();
